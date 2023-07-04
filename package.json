@@ -12,7 +12,8 @@
     "watch": "webpack --watch",
     "serve": "webpack serve",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "deploy-demo": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",
