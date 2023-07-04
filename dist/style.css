@@ -1,0 +1,164 @@
+:root {
+  --font-color: #ffffff;
+  --background-color: #1b262c;
+  --linear-gradient-color: linear-gradient(
+    90deg,
+    rgba(202, 236, 255, 1) 0%,
+    rgba(120, 207, 255, 1) 100%
+  );
+  --font-focus-color: #caecff;
+  --container-color: #24353e;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  width: 70px;
+}
+
+body {
+  background: var(--background-color);
+  font-family: 'Poppins', sans-serif;
+  color: var(--font-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  padding-inline: 1rem;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header div h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+span {
+  background: var(--linear-gradient-color);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 600;
+}
+
+.weather-container {
+  background: var(--container-color);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.weather-container.show {
+  padding: 1rem;
+}
+
+.weather-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.search-box {
+  min-width: 300px;
+  max-width: 600px;
+  background: #fff;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+input {
+  flex: 1;
+  height: 50px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+button i {
+  width: 25px;
+  color: #555;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: #555;
+}
+
+.result-box ul {
+  border-top: 1px solid #999;
+  padding: 15px 10px;
+}
+
+.result-box ul li {
+  list-style: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+  cursor: pointer;
+  color: var(--background-color);
+}
+
+.result-box ul li:hover {
+  background: #e9f3ff;
+}
+
+.weather-box__temperature {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--font-focus-color);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul.hide {
+  display: none;
+}
